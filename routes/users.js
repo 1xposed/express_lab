@@ -38,5 +38,8 @@ router.route("/:id").get(':/id',(req,res)=>{
 });
 
 
-
+router.param("id", (req, res, next, id)=>{
+    console.log(`accessing user #${id}`);
+    next();
+});
 module.exports = router;
