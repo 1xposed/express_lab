@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <h1>Register User</h1>
+        <form action="/users" method="post">
+
+            <fieldset>
+                <legend>Name</legend>
+           <label>First  
+            <input type="text" name="firstName" value = "<%= locals.firstName %>">
+            </label> 
+
+        <br>
+            <label> 
+            Last  
+            <input type="text" name="lastName" value = "<%= locals.lastName %>">
+            </label> 
+            </fieldset>
+
+
+        <br>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label> 
+            Male<input type="radio" name="gender" value = "Male">
+            </label> 
+        <br>
+
+            <label> 
+            Female<input type="radio" name="gender" value = "Female">
+            </label> 
+            </fieldset>
+        <br>
+
+            <label> 
+            Age<input type="number" name="age">
+            </label> 
+
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+
+
+    
+</body>
+</html>
