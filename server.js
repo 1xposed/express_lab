@@ -24,7 +24,6 @@ app.get('/', (req, res)=> {
 
 
 
-
 function logger(req, res, next){
     console.log(`page accessed: ${req.originalUrl}`);
     next();
