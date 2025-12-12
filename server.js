@@ -11,13 +11,14 @@ app.use(express.urlencoded({extended:true}))
 // app.use(logger);
 
 app.use('/users', userRouter);
-app.use(`/posts`, postRouter);
+app.use(`/posts`, postRouter);  //POSTSFORHW
 
 
 app.get('/', (req, res)=> {
     console.log(`here`);
     res.render("index", {user:"karsten"});
 }); //this function will run when someone goes to the root folder
+
 
 
 

@@ -67,7 +67,7 @@ router.post('/',(req,res)=>{
 
 // });
 
-router.route("/:id").get(':/id',(req,res)=>{
+router.route("/:id").get((req,res)=>{
     res.send(`Getting User Data: ${req.params.id}`);
 
 }).delete((req, res)=>{
